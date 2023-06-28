@@ -74,4 +74,4 @@ colPerc(table1)
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
-
+```
