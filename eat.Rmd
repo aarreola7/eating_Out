@@ -15,6 +15,12 @@ date: "`r Sys.Date()`"
 ## There were two years in which the General Social Survey asked about the frequency of eating out.
 ### Find those years and for the first year the question was asked download that years data in a stata format - its name will be "GSSxxxx.dta" where the xxxx is replaced by the year.  For example if the year was 1983 its name would be GSS1983.dta. Your assignment is to download the GSS yearly dataset for the first year the question was asked and then  write up the answer to the question by editing the  code block in line 31 to eval=TRUE and finish the job. 
 
+
+#method
+
+
+We download SATA,SPSS, and SAS from NORC. Norc offers real data from this university and we will use the different formats.We will use code to generate our bargraphs. We will also be using the helper file Cat~Cat to complete this project.
+
 $H_0$ There is no difference among the various races with frequency of eating out  
 $H_A$ There is a statistical difference between at least two races with the frequency of eating out  
 
@@ -71,6 +77,9 @@ colPerc(table1)
 
 ```
 
+These numerical results show us the percentages of people eating out. It shows us that 83.11 % of whites eat out while 16.89 white people do not.It shows us that 69.04 of the black people that were in the experiment ate out while 39.96 did not. Then it states that 72.12 of other races ate out while 27.88 % did not.In all it shows ust that 81.75 percent of the people eating out where white.
+
+
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
@@ -83,3 +92,12 @@ chisqtestGC(table1)
 fisherXY(mydata$race,mydata$eatout,printAll = TRUE)
 ```
 
+
+
+
+
+
+
+#conclusion 
+
+We had a lot of trouble with this project. We had to figure out how to get warning out of the knitted results.  We learned how to extract data from NORC. 
