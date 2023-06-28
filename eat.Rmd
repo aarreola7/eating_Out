@@ -28,7 +28,7 @@ require(knitr)
 require(foreign)
 ```
 
-```{r, eval=TRUE}
+```{r, eval=TRUE,warning=FALSE}
 #GSS<-read_dta(file="GSS1998.dta")
 GSS <- readstata13::read.dta13(file="GSS1998.dta")
 GSS <- droplevels(GSS)
@@ -80,6 +80,6 @@ chisqtestGC(table1)
 
 
 ```{r}
-fisherXY(mydata$race,mydata$eatout)
+fisherXY(mydata$race,mydata$eatout,printAll = TRUE)
 ```
 
