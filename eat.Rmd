@@ -85,19 +85,18 @@ chisq.test(table1)
 chisqtestGC(table1)
 ```
 
-
+We have a low P value .000002287. The Chi-square statistics is 25.9769
 
 
 ```{r}
 fisherXY(mydata$race,mydata$eatout,printAll = TRUE)
 ```
 
-
-
-
+In the first test ("white" vs. "black"), the p-value is very small (1.183e-05), indicating strong evidence to reject the null hypothesis.In the second test ("white" vs. "other"), the p-value is 0.00721, which is below the conventional threshold of 0.05. This provides evidence to reject the null hypothesis.
+In the third test ("black" vs. "other"), the p-value is 0.5993, which is greater than 0.05. This indicates that there is not enough evidence to reject the null hypothesis, suggesting that there may not be a significant association between the variables.
 
 
 
 #conclusion 
 
-We had a lot of trouble with this project. We had to figure out how to get warning out of the knitted results.  We learned how to extract data from NORC. 
+We had a lot of trouble with this project. We had to figure out how to get warning out of the knitted results. We learned to work with fisher xy and get variable fro the GSS/Norc.We also ran a pearson chi-squared test. All in all this was a very frustrating project but we were able to persevere and get it done. 
