@@ -19,7 +19,7 @@ date: "`r Sys.Date()`"
 #method
 
 
-We download SATA,SPSS, and SAS from NORC. Norc offers real data from this university and we will use the different formats.We will use code to generate our bargraphs. We will also be using the helper file Cat~Cat to complete this project.
+We download SATA,SPSS, and SAS from NORC. Norc offers real data from this university and we will use the different formats.We will use code to generate our bargraphs. We will also be using the helper file Cat~Cat to complete this project. Using these methods we will find which race eats out more often.
 
 $H_0$ There is no difference among the various races with frequency of eating out  
 $H_A$ There is a statistical difference between at least two races with the frequency of eating out  
@@ -50,7 +50,7 @@ barchartGC(~race+ eatout,data=mydata)
 barchartGC(~race + eatout,data=mydata, type="percent")
 ```
 
-This bargraph shows us that 
+This bargraph we see that % wise there was not much difference in eating out from black and other race. The white people were eating out more.
 
 
 ```{r}
