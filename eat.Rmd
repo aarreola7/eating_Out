@@ -50,7 +50,7 @@ barchartGC(~race+ eatout,data=mydata)
 barchartGC(~race + eatout,data=mydata, type="percent")
 ```
 
-This bargraph we see that % wise there was not much difference in eating out from black and other race. The white people were eating out more.
+This bargraph show us that % wise there was not much difference in eating out from black and other race. We are also able to see that white people were eating out more.
 
 
 ```{r}
