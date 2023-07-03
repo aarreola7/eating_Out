@@ -68,8 +68,7 @@ basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=eatout))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-In this graph we are able to see that the bar on the left is is by count and the one on the right is by percent.
-
+These plots provide visual insights into the distribution of observations across different race and eatout categories, allowing for easy comparison between the counts and percentages within each race category.After intensive observation from reading the bar graphs,we can conclude that white people tend to eat out more than the other races.
 
 ```{r}
 table1 <- xtabs(~race + eatout, data=mydata)
@@ -101,4 +100,4 @@ In the third test ("black" vs. "other"), the p-value is 0.5993, which is greater
 
 #conclusion 
 
-We had a lot of trouble with this project. We had to figure out how to get warning out of the knitted results. We learned to work with fisher xy and get variable fro the GSS/Norc.We also ran a pearson chi-squared test. All in all this was a very frustrating project but we were able to persevere and get it done. 
+We had a lot of trouble with this project. We had to figure out how to get warning out of the knitted results. We learned to work with fisher xy and get variable from the GSS/Norc.We also ran a pearson chi-squared test. All in all this was a very frustrating project but we were able to persevere and get it done. 
