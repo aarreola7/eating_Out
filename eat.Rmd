@@ -68,6 +68,8 @@ basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=eatout))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
+In this graph we are able to see that the bar on the left is is by count and the one on the right is by percent.
+
 
 ```{r}
 table1 <- xtabs(~race + eatout, data=mydata)
