@@ -50,8 +50,7 @@ barchartGC(~race+ eatout,data=mydata)
 barchartGC(~race + eatout,data=mydata, type="percent")
 ```
 
-This bargraph show us that % wise there was not much difference in eating out from black and other race. We are also able to see that white people were eating out more.
-
+This bargraph show us that % wise there was not much difference in eating out from black and other race. We are also able to see that white people were eating out more.Both charts provide a visual representation of the distribution of observations across different "race" and "eatout" categories. The first chart shows the count of observations, while the second chart displays the relative proportions as percentages. These charts allow for easy comparison between different category combinations within each "race" group.
 
 ```{r}
 dd2 <- mydata %>% group_by(race,eatout) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
